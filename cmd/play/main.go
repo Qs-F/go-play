@@ -10,5 +10,10 @@ func main() {
 		play.OutputErr(err.Error())
 		return
 	}
+	err = play.GiveDescribe(s)
+	if err != nil {
+		play.OutputErr(err.Error())
+		return
+	}
 	play.Output(s)
 }
